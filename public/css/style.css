@@ -1,0 +1,547 @@
+/* General Styling */
+body {
+    margin: 0;
+    font-family: 'Arial', sans-serif;
+}
+.navbar {
+    padding: 10px 35px;
+    background-color: white;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+.o_main_nav.container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+/* Logo Styling */
+.navbar-brand.logo {
+    display: flex;
+    align-items: center;
+}
+.navbar-brand.logo img {
+    height: 40px;
+    width: auto;
+}
+/* Navbar Menu Items Styling */
+.navbar-nav.top_menu {
+    display: flex;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    margin-left: 20px; /* Space between logo and menu */
+}
+.navbar-nav.top_menu .nav-item {
+    margin: 0 10px;
+}
+.navbar-nav.top_menu .nav-link {
+    color: #817f7f;
+    text-decoration: none;
+    font-size: 16px;
+}
+.navbar-nav.top_menu .nav-link.active {
+    color: #000;
+}
+
+/* Right-side Navigation Items Styling */
+.navbar-nav.align-items-center {
+    display: flex;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    margin-left: auto; /* Pushes items to the right */
+}
+
+.btn-outline-secondary {
+    padding: 8px 16px;
+    border: 1px solid #000;
+    color: #000;
+    background-color: transparent;
+    border-radius: 4px;
+    text-decoration: none;
+    font-size: 16px;
+}
+
+.btn-lg-btn-secondary {
+    padding: 16px 30px;
+    color: #352637;
+    background-color: #ffffff;
+    border-radius: 4px;
+    text-decoration: none;
+    font-size: 20px;
+}
+
+/* Responsive */
+@media (max-width: 992px) {
+    .navbar {
+        display: none;
+    }
+}
+/* Footer */
+footer.o_footer {
+    background-color: #6A4A73; /* Background color of the footer */
+    color: #fff; /* Text color */
+    
+}
+footer .s_text_block {
+    padding-bottom: 24px; /* Space at the bottom of each section */
+}
+footer h4 {
+    font-size: 24px;
+    font-weight: bold;
+    color: #ffffff;
+}
+footer p.lead {
+    font-size: 18px;
+    margin-bottom: 16px;
+    color: #ffffff;
+    font-weight: lighter;
+    padding: 4px 150px;
+    padding-bottom: 0px;
+}
+footer ul {
+    padding-left: 170px;
+    list-style: none;
+}
+footer ul li {
+    display: flex;
+    margin-bottom: 12px;
+    font-size: 16px;
+}
+footer ul li img {
+    margin-right: 10px; /* Space between icon and text */
+}
+footer ul li a {
+    color: #f7f7f7; /* Color of the links */
+    text-decoration: none;
+}
+footer ul li a:hover {
+    text-decoration: underline;
+}
+footer .container {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+footer .row {
+    display: flex;
+    justify-content: flex-start; /* Align text to the left */
+    align-items: center;
+}
+
+/* Cover Section */
+.s_cover {
+    background-color: #352637;
+    background-size: cover;
+    background-position: center;
+    position: relative;
+    color: #ffffff;
+    text-align: center;
+    padding: 200px 0;
+}
+.s_cover h1 {
+    font-size: 3rem;
+    z-index: 1;
+    position: relative;
+}
+.s_cover .lead {
+    font-size: 1.25rem;
+    z-index: 1;
+    font-weight: lighter;
+    position: relative;
+}
+.s_cover .btn-secondary {
+    background-color: #ffffff;
+    color: #352637;
+}
+.s_cover .btn-secondary:hover {
+    background-color: #ffffff;
+    border-color: #352637;
+}
+/* General section styling */
+.s_text_image {
+    padding-top: 32px;
+    padding-bottom: 32px;
+}
+
+/* Padding classes */
+.pt32 {
+    padding-top: 32px;
+}
+
+.pb32 {
+    padding-bottom: 32px;
+}
+
+.pt16 {
+    padding-top: 16px;
+}
+
+.pb16 {
+    padding-bottom: 16px;
+}
+
+/* Container styling */
+.container {
+    max-width: 1140px;
+    margin: 0 auto;
+    padding: 0 15px;
+}
+
+/* Row and column styling */
+.row {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0 -15px;
+}
+
+.col-lg-4 {
+    flex: 0 0 33.333%;
+    max-width: 33.333%;
+}
+
+.col-lg-5 {
+    flex: 0 0 45%;
+    max-width: 45%;
+}
+
+.offset-lg-1 {
+    margin-left: 10%;
+}
+
+/* Column adjustment for 'col-lg-4 offset-lg-1' */
+.col-lg-4.offset-lg-1 {
+    flex: 0 0 33.333%;
+    max-width: 33.333%;
+    margin-left: 7%;
+}
+
+/* Horizontal line styling */
+.s_hr hr {
+    border-top-width: 1px;
+    border-top-style: solid;
+    border-top-color: var(--o-color-3) !important;
+}
+/* Typography */
+h2 {
+    line-height: 2.5;
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+}
+p {
+    line-height: 2.5;
+    font-weight: lighter;
+    margin-bottom: 1rem;
+}
+/* Responsive design adjustments */
+@media (max-width: 767.98px) {
+    .col-lg-4,
+    .col-lg-5 {
+        flex: 0 0 100%;
+        max-width: 100%;
+    }
+
+    .offset-lg-1 {
+        margin-left: 0;
+    }
+}
+.content-1 {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 20px;
+    margin: 40px;
+    text-decoration: none;
+}
+
+.card-1 {
+    width: 500px; /* Adjusted the width for better responsiveness */
+    height: 250px; /* Adjusted height for a more compact look */
+    background-color: #BA9ABA;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    text-decoration: none;
+    transition: background-color 0.3s ease; /* Added smooth transition for hover effect */
+    
+}
+.card-1 a {
+    text-decoration: none;
+    color: white;
+    font-size: 2.5em;
+    font-weight: bold;
+}
+
+.card-1:hover {
+    background-color: #a67ea6;
+}
+.content {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 20px;
+    margin: 40px;
+}
+.card {
+    width: 500px;
+    background-color: #BA9ABA;
+    color: white;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgb(255, 255, 255);
+    overflow: hidden;
+}
+.card img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+}
+.card-content {
+    padding: 20px;
+}
+.card-content h4 {
+    margin-top: 0;
+}
+.card-content p {
+    margin: 10px 0;
+}
+.card-content .date {
+    font-size: 0.9em;
+    font-weight: bold;
+}
+.card-content .description {
+    font-size: 1em;
+}
+.card-content button {
+    margin-top: 15px;
+    background-color: white;
+    border: none;
+    color: #BA9ABA;
+    font-size: 1em;
+    font-weight: bold;
+    cursor: pointer;
+    border-radius: 4px;
+    padding: 10px;
+}
+.card-content button:hover {
+    background-color: #e0d1e0;
+}
+/* Modal Styles */
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgb(0,0,0);
+    background-color: rgba(0,0,0,0.4);
+    padding-top: 60px;
+}
+.modal-content {
+    background-color: #fefefe;
+    margin: 5% auto;
+    padding: 20px;
+    border: 1px solid #888;
+    width: 80%;
+    border-radius: 8px;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.3);
+}
+.modal-header {
+    font-size: 1.5em;
+    font-weight: bold;
+}
+.close {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+}
+.close:hover,
+.close:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.modal-body {
+    margin: 15px 0;
+}
+
+h1 {
+    text-align: center;
+    color:#BA9ABA;
+}
+table {
+    border-collapse: collapse;
+    margin: 30px auto;
+    background-color: #BA9ABA;
+    border: 2px solid#9D669D;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+th,
+td {
+    border: 1px solid #dee2e6;
+    padding: 30px;
+    text-align: center;
+}
+
+th {
+    background-color: #f2f2f2;
+    color: #343a40;
+}
+/* General container settings */
+.container-fluid {
+    width: 100%; 
+    padding: 0; 
+    margin: 0; 
+}
+/* Row settings */
+.row-1 {
+    display: flex; 
+    flex-wrap: wrap; 
+}
+/* Column settings for the color blocks */
+.col-lg-6 {
+    flex: 0 0 50%; 
+    max-width: 50%; 
+    position: relative; 
+    padding: 0; 
+    display: flex;
+    align-items: center; 
+    justify-content: center; 
+    color: white; 
+}
+.oe_img_bg {
+    background-size: cover; /* Ensures the background image covers the entire column */
+    background-color: #352637; 
+    min-height: 400px; /* Sets a minimum height for the columns */
+}
+h3 {
+    font-size: 30px; /* Larger heading size */
+    font-weight: bold; /* Bold text for emphasis */
+    margin-bottom: 0px; 
+    line-height: 2;
+    margin-top: 20px;
+    position: absolute;
+    top: 10px
+}
+p1{
+    font-size: 17px;
+    line-height: 2;
+    position: absolute;
+    text-align: center;
+    font-weight: lighter;
+    margin: 40;
+}
+section.resources, section.notes {
+    margin: 20px auto;
+    padding: 10px;
+    max-width: 800px;
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+section h2 {
+    font-size: 1.8em;
+    border-bottom: 2px solid #6A4A73;
+    padding-bottom: 5px;
+    margin-bottom: 10px;
+}
+ul {
+    list-style-type: none;
+    padding-left: 0;
+}
+ul li {
+    margin-bottom: 10px;
+}
+ul li a {
+    color: #000;
+    text-decoration: none;
+}
+ul li a:hover {
+    text-decoration:underline;
+}
+
+/* Form Container */
+.oe_login_form {
+    display: flex;
+    flex-direction: column;
+    max-width: 200px;
+    margin: 50px;
+    padding: 150px;
+    background-color: #fff;
+}
+
+/* Form Labels */
+.oe_login_form .form-label {
+    font-size: 15px;
+    font-weight: bold;
+    margin-bottom: 8px;
+    color: #333;
+}
+
+/* Form Controls */
+.oe_login_form .form-control {
+    width: 500%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 16px;
+    box-sizing: border-box;
+    margin-bottom: 15px;
+}
+/* Focused Input Styles */
+.oe_login_form .form-control:focus {
+    border-color: #6A4A73;
+    outline: none;
+    box-shadow: 0 0 0 2px rgba(0, 0, 0, 0.2);
+    box-sizing: border-box;
+}
+/* Submit Button */
+.oe_login_buttons .btn-primary {
+    background-color: #6A4A73;
+    border: none;
+    color: #fff;
+    padding: 12px;
+    font-size: 16px;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    text-align: center;
+}
+.oe_login_buttons .btn-primary:hover {
+    text-decoration: underline;
+}
+
+/* Additional Button Styles */
+.oe_login_buttons a {
+    color: #6c757d;
+    text-decoration: none;
+    font-size: 14px;
+    display: inline-block;
+    margin: 5px 0;
+}
+
+.oe_login_buttons a:hover {
+    text-decoration: underline;
+    font-weight: bold;
+}
+
+/* Margin Adjustment */
+.mb-3 {
+    margin-bottom: 20px;
+}
+.pt-3 {
+    padding-top: 15px;
+}
+
+#garbha-img {
+    width: 550px;
+    margin-left: -20px; /* Adjust this value to move the image left */
+}
