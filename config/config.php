@@ -1,16 +1,13 @@
 <?php
-$servername = "localhost";
+$servername = "centerbeam.proxy.rlwy.net";
 $username = "root";
-$password = "root";
-
+$password = "kprGafttKYbDDOYifyqFcUEUtETQxGFo";
+$port = "37516";
 try {
-  $conn = new PDO("mysql:host=$servername;dbname=dbApprise", $username, $password);
-  // set the PDO error mode to exception
+  $conn = new PDO("mysql:host=$servername;port=$port;dbname=railway", $username, $password);
   $conn->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
-  //echo "Connected successfully";
 } catch(PDOException $e) {
   echo "Connection failed: " . $e->getMessage();
 }
-
-define('BASE_URL', 'http://localhost:8888/apprisetutorials/');
+define('BASE_URL', '/');
 ?>
